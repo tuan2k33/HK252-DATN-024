@@ -1,0 +1,25 @@
+cifar10:
+  size: 32
+  n_classes: 10
+  cls_per_task: 2
+  n_tasks: 5
+  mean: [0.4914, 0.4822, 0.4465]
+  std:  [0.2023, 0.1994, 0.2010]
+  blur_prob: 0.0
+  blur_kernel_size: 3
+  crop_scale_min: 0.2
+  data_root: ./data/cifar-10
+  download: false
+
+tinyimagenet:
+  size: 64
+  n_classes: 200
+  cls_per_task: 20
+  n_tasks: 10
+  mean: [0.4802, 0.4480, 0.3975]
+  std:  [0.2770, 0.2691, 0.2821]
+  blur_prob: 0.5
+  blur_kernel_size: 7
+  crop_scale_min: 0.1
+  data_root: ./data/tiny-imagenet
+  download: false

@@ -1,0 +1,143 @@
+2026-04-19 12:23:51,830 [INFO] ==================================================
+2026-04-19 12:23:51,830 [INFO] >>>> STARTING EXPERIMENT <<<<
+2026-04-19 12:23:51,830 [INFO]   dataset       = cifar10
+2026-04-19 12:23:51,830 [INFO]   lmbd          = 0.0
+2026-04-19 12:23:51,830 [INFO]   trials        = 1
+2026-04-19 12:23:51,830 [INFO]   epochs_train  = 100
+2026-04-19 12:23:51,830 [INFO]   epochs_eval   = 100
+2026-04-19 12:23:51,830 [INFO]   t_contrast    = 0.07
+2026-04-19 12:23:51,830 [INFO]   t_student     = 0.07
+2026-04-19 12:23:51,830 [INFO]   t_teacher     = 0.07
+2026-04-19 12:23:51,830 [INFO]   metrics       = False
+2026-04-19 12:23:51,830 [INFO]   alpha_lump    = 0.1
+2026-04-19 12:23:51,830 [INFO]   buffer_size   = 500
+2026-04-19 12:23:51,830 [INFO]   log_file      = ./log_tuning/ablation_lump_no_ird.log
+2026-04-19 12:23:51,830 [INFO] ==================================================
+2026-04-19 12:23:51,830 [INFO] >>>> TRIAL 1/1 <<<<
+2026-04-19 12:23:51,852 [INFO] Using device: cuda
+2026-04-19 12:23:52,520 [INFO] === Task 1 / 5 ===
+2026-04-19 12:24:17,333 [INFO] Task 1, Epoch 10, Avg Loss: 2.1397
+2026-04-19 12:24:42,118 [INFO] Task 1, Epoch 20, Avg Loss: 1.2734
+2026-04-19 12:25:07,921 [INFO] Task 1, Epoch 30, Avg Loss: 0.8680
+2026-04-19 12:25:32,353 [INFO] Task 1, Epoch 40, Avg Loss: 0.7062
+2026-04-19 12:25:56,879 [INFO] Task 1, Epoch 50, Avg Loss: 0.8927
+2026-04-19 12:26:21,226 [INFO] Task 1, Epoch 60, Avg Loss: 0.7086
+2026-04-19 12:26:45,757 [INFO] Task 1, Epoch 70, Avg Loss: 0.5634
+2026-04-19 12:27:10,302 [INFO] Task 1, Epoch 80, Avg Loss: 0.4690
+2026-04-19 12:27:34,883 [INFO] Task 1, Epoch 90, Avg Loss: 0.6796
+2026-04-19 12:27:59,528 [INFO] Task 1, Epoch 100, Avg Loss: 0.5552
+2026-04-19 12:28:23,949 [INFO] Task 1, Epoch 110, Avg Loss: 0.4405
+2026-04-19 12:28:48,412 [INFO] Task 1, Epoch 120, Avg Loss: 0.3830
+2026-04-19 12:29:12,763 [INFO] Task 1, Epoch 130, Avg Loss: 0.5599
+2026-04-19 12:29:37,289 [INFO] Task 1, Epoch 140, Avg Loss: 0.4716
+2026-04-19 12:30:01,706 [INFO] Task 1, Epoch 150, Avg Loss: 0.3784
+2026-04-19 12:30:26,262 [INFO] Task 1, Epoch 160, Avg Loss: 0.3138
+2026-04-19 12:30:50,908 [INFO] Task 1, Epoch 170, Avg Loss: 0.5076
+2026-04-19 12:31:16,295 [INFO] Task 1, Epoch 180, Avg Loss: 0.4431
+2026-04-19 12:31:40,937 [INFO] Task 1, Epoch 190, Avg Loss: 0.3420
+2026-04-19 12:32:05,531 [INFO] Task 1, Epoch 200, Avg Loss: 0.3002
+2026-04-19 12:32:31,075 [INFO] Task 1, Epoch 210, Avg Loss: 0.4561
+2026-04-19 12:32:56,541 [INFO] Task 1, Epoch 220, Avg Loss: 0.3997
+2026-04-19 12:33:20,900 [INFO] Task 1, Epoch 230, Avg Loss: 0.3172
+2026-04-19 12:33:45,372 [INFO] Task 1, Epoch 240, Avg Loss: 0.2636
+2026-04-19 12:34:09,811 [INFO] Task 1, Epoch 250, Avg Loss: 0.4219
+2026-04-19 12:34:34,694 [INFO] Task 1, Epoch 260, Avg Loss: 0.3701
+2026-04-19 12:34:59,454 [INFO] Task 1, Epoch 270, Avg Loss: 0.2864
+2026-04-19 12:35:22,765 [INFO] Task 1, Epoch 280, Avg Loss: 0.2580
+2026-04-19 12:35:46,120 [INFO] Task 1, Epoch 290, Avg Loss: 0.4010
+2026-04-19 12:36:09,692 [INFO] Task 1, Epoch 300, Avg Loss: 0.3467
+2026-04-19 12:36:32,989 [INFO] Task 1, Epoch 310, Avg Loss: 0.2802
+2026-04-19 12:36:56,386 [INFO] Task 1, Epoch 320, Avg Loss: 0.2424
+2026-04-19 12:37:19,862 [INFO] Task 1, Epoch 330, Avg Loss: 0.3564
+2026-04-19 12:37:43,365 [INFO] Task 1, Epoch 340, Avg Loss: 0.3296
+2026-04-19 12:38:06,778 [INFO] Task 1, Epoch 350, Avg Loss: 0.2524
+2026-04-19 12:38:30,114 [INFO] Task 1, Epoch 360, Avg Loss: 0.2309
+2026-04-19 12:38:53,513 [INFO] Task 1, Epoch 370, Avg Loss: 0.3455
+2026-04-19 12:39:16,994 [INFO] Task 1, Epoch 380, Avg Loss: 0.3152
+2026-04-19 12:39:40,358 [INFO] Task 1, Epoch 390, Avg Loss: 0.2554
+2026-04-19 12:40:03,824 [INFO] Task 1, Epoch 400, Avg Loss: 0.2205
+2026-04-19 12:40:27,244 [INFO] Task 1, Epoch 410, Avg Loss: 0.3424
+2026-04-19 12:40:50,684 [INFO] Task 1, Epoch 420, Avg Loss: 0.3054
+2026-04-19 12:41:14,231 [INFO] Task 1, Epoch 430, Avg Loss: 0.2505
+2026-04-19 12:41:37,600 [INFO] Task 1, Epoch 440, Avg Loss: 0.2269
+2026-04-19 12:42:01,073 [INFO] Task 1, Epoch 450, Avg Loss: 0.3190
+2026-04-19 12:42:24,626 [INFO] Task 1, Epoch 460, Avg Loss: 0.2895
+2026-04-19 12:42:48,309 [INFO] Task 1, Epoch 470, Avg Loss: 0.2404
+2026-04-19 12:43:11,709 [INFO] Task 1, Epoch 480, Avg Loss: 0.2104
+2026-04-19 12:43:37,101 [INFO] Task 1, Epoch 490, Avg Loss: 0.3432
+2026-04-19 12:44:00,510 [INFO] Task 1, Epoch 500, Avg Loss: 0.2885
+2026-04-19 12:44:03,500 [INFO] After Task 1 - Task accs : [97.85]
+2026-04-19 12:44:03,500 [INFO] After Task 1 - Class accs: [98.5, 97.2]
+2026-04-19 12:44:03,500 [INFO] === Task 2 / 5 ===
+2026-04-19 12:44:41,617 [INFO] Task 2, Epoch 10, Avg Loss: 1.2960
+2026-04-19 12:45:19,262 [INFO] Task 2, Epoch 20, Avg Loss: 1.4743
+2026-04-19 12:45:54,794 [INFO] Task 2, Epoch 30, Avg Loss: 1.1111
+2026-04-19 12:46:31,149 [INFO] Task 2, Epoch 40, Avg Loss: 1.1656
+2026-04-19 12:47:06,870 [INFO] Task 2, Epoch 50, Avg Loss: 0.9568
+2026-04-19 12:47:42,465 [INFO] Task 2, Epoch 60, Avg Loss: 1.1811
+2026-04-19 12:48:20,021 [INFO] Task 2, Epoch 70, Avg Loss: 0.9193
+2026-04-19 12:48:57,691 [INFO] Task 2, Epoch 80, Avg Loss: 0.9402
+2026-04-19 12:49:33,151 [INFO] Task 2, Epoch 90, Avg Loss: 1.1315
+2026-04-19 12:50:08,673 [INFO] Task 2, Epoch 100, Avg Loss: 1.0267
+2026-04-19 12:50:14,755 [INFO] After Task 2 - Task accs : [97.2, 88.3]
+2026-04-19 12:50:14,755 [INFO] After Task 2 - Class accs: [89.5, 95.4, 80.8, 84.8]
+2026-04-19 12:50:14,755 [INFO] === Task 3 / 5 ===
+2026-04-19 12:50:50,396 [INFO] Task 3, Epoch 10, Avg Loss: 1.3178
+2026-04-19 12:51:25,938 [INFO] Task 3, Epoch 20, Avg Loss: 1.1179
+2026-04-19 12:52:01,838 [INFO] Task 3, Epoch 30, Avg Loss: 0.7793
+2026-04-19 12:52:39,734 [INFO] Task 3, Epoch 40, Avg Loss: 1.0245
+2026-04-19 12:53:15,452 [INFO] Task 3, Epoch 50, Avg Loss: 1.1587
+2026-04-19 12:53:51,424 [INFO] Task 3, Epoch 60, Avg Loss: 1.0456
+2026-04-19 12:54:27,109 [INFO] Task 3, Epoch 70, Avg Loss: 0.9198
+2026-04-19 12:55:02,914 [INFO] Task 3, Epoch 80, Avg Loss: 0.8594
+2026-04-19 12:55:38,686 [INFO] Task 3, Epoch 90, Avg Loss: 1.1652
+2026-04-19 12:56:14,648 [INFO] Task 3, Epoch 100, Avg Loss: 0.9030
+2026-04-19 12:56:23,571 [INFO] After Task 3 - Task accs : [97.3, 87.35, 93.45]
+2026-04-19 12:56:23,571 [INFO] After Task 3 - Class accs: [87.0, 95.2, 65.9, 66.0, 82.9, 73.2]
+2026-04-19 12:56:23,571 [INFO] === Task 4 / 5 ===
+2026-04-19 12:56:59,630 [INFO] Task 4, Epoch 10, Avg Loss: 1.0111
+2026-04-19 12:57:35,473 [INFO] Task 4, Epoch 20, Avg Loss: 0.8814
+2026-04-19 12:58:11,502 [INFO] Task 4, Epoch 30, Avg Loss: 1.0486
+2026-04-19 12:58:47,687 [INFO] Task 4, Epoch 40, Avg Loss: 0.9997
+2026-04-19 12:59:24,086 [INFO] Task 4, Epoch 50, Avg Loss: 1.0652
+2026-04-19 13:00:00,203 [INFO] Task 4, Epoch 60, Avg Loss: 0.8659
+2026-04-19 13:00:36,364 [INFO] Task 4, Epoch 70, Avg Loss: 0.9463
+2026-04-19 13:01:12,861 [INFO] Task 4, Epoch 80, Avg Loss: 0.9248
+2026-04-19 13:01:48,905 [INFO] Task 4, Epoch 90, Avg Loss: 0.9783
+2026-04-19 13:02:26,481 [INFO] Task 4, Epoch 100, Avg Loss: 0.9920
+2026-04-19 13:02:38,244 [INFO] After Task 4 - Task accs : [97.2, 86.45, 93.05, 98.05]
+2026-04-19 13:02:38,244 [INFO] After Task 4 - Class accs: [87.1, 95.3, 63.1, 59.1, 72.9, 71.4, 83.2, 81.4]
+2026-04-19 13:02:38,244 [INFO] === Task 5 / 5 ===
+2026-04-19 13:03:17,332 [INFO] Task 5, Epoch 10, Avg Loss: 1.0576
+2026-04-19 13:03:58,940 [INFO] Task 5, Epoch 20, Avg Loss: 0.8153
+2026-04-19 13:04:38,382 [INFO] Task 5, Epoch 30, Avg Loss: 0.9576
+2026-04-19 13:05:18,384 [INFO] Task 5, Epoch 40, Avg Loss: 0.8595
+2026-04-19 13:05:56,835 [INFO] Task 5, Epoch 50, Avg Loss: 0.9516
+2026-04-19 13:06:33,231 [INFO] Task 5, Epoch 60, Avg Loss: 0.9043
+2026-04-19 13:07:09,688 [INFO] Task 5, Epoch 70, Avg Loss: 0.8611
+2026-04-19 13:07:46,329 [INFO] Task 5, Epoch 80, Avg Loss: 0.8571
+2026-04-19 13:08:22,842 [INFO] Task 5, Epoch 90, Avg Loss: 1.4264
+2026-04-19 13:08:59,443 [INFO] Task 5, Epoch 100, Avg Loss: 1.1702
+2026-04-19 13:09:14,753 [INFO] After Task 5 - Task accs : [96.75, 85.55, 92.0, 96.7, 97.3]
+2026-04-19 13:09:14,754 [INFO] After Task 5 - Class accs: [77.9, 90.6, 59.7, 57.3, 69.8, 67.6, 81.4, 77.4, 88.0, 88.1]
+2026-04-19 13:09:14,764 [INFO] Trial 1 completed in 2722.93 seconds
+2026-04-19 13:09:14,776 [INFO] ==================================================
+2026-04-19 13:09:14,776 [INFO] >>>> ENDING EXPERIMENT <<<<
+2026-04-19 13:09:14,776 [INFO]   lmbd          = 0.0
+2026-04-19 13:09:14,776 [INFO]   trials        = 1
+2026-04-19 13:09:14,776 [INFO]   epochs_train  = 100
+2026-04-19 13:09:14,776 [INFO]   epochs_eval   = 100
+2026-04-19 13:09:14,776 [INFO]   t_contrast    = 0.07
+2026-04-19 13:09:14,776 [INFO]   t_student     = 0.07
+2026-04-19 13:09:14,776 [INFO]   t_teacher     = 0.07
+2026-04-19 13:09:14,776 [INFO]   metrics       = False
+2026-04-19 13:09:14,776 [INFO]   alpha_lump    = 0.1
+2026-04-19 13:09:14,776 [INFO]   buffer_size   = 500
+2026-04-19 13:09:14,776 [INFO]   log_file      = ./log_tuning/ablation_lump_no_ird.log
+2026-04-19 13:09:14,776 [INFO] ==================================================
+2026-04-19 13:09:14,776 [INFO] ==================================================
+2026-04-19 13:09:14,776 [INFO] >>>> SUMMARY lmbd=0.0 <<<<
+2026-04-19 13:09:14,776 [INFO] ==================================================
+2026-04-19 13:09:14,776 [INFO] Class-IL Accuracy : 75.68 ± 0.00
+2026-04-19 13:09:14,776 [INFO] Task-IL Accuracy  : 93.56 ± 0.00
+2026-04-19 13:09:14,776 [INFO] ==================================================
