@@ -1,5 +1,6 @@
 import os
 import numpy as np
+import pandas as pd
 import torchvision.transforms as transforms
 from torch.utils.data import Dataset
 from PIL import Image
@@ -70,6 +71,35 @@ class TinyImagenet(Dataset):
 
         if hasattr(self, 'logits'):
             return img, target, original_img, self.logits[index]
+
+        return img, target
+
+
+class EuroSAT(Dataset):
+    def __init__(self, root: str, train: bool = True, transform=None,
+                 target_transform=None) -> None:
+        self.root = root
+        self.transform = transform
+        self.target_transform = target_transform
+
+        split = 'train' if train else 'test'
+        df = pd.read_csv(os.path.join(root, f'{split}.csv'))
+
+        self.img_paths = [os.path.join(root, row['Filename']) for _, row in df.iterrows()]
+        self.targets   = [int(row['Label']) for _, row in df.iterrows()]
+
+    def __len__(self):
+        return len(self.img_paths)
+
+    def __getitem__(self, index):
+        img    = Image.open(self.img_paths[index]).convert('RGB')
+        target = self.targets[index]
+
+        if self.transform is not None:
+            img = self.transform(img)
+
+        if self.target_transform is not None:
+            target = self.target_transform(target)
 
         return img, target
 
