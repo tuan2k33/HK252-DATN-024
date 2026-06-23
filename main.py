@@ -351,6 +351,10 @@ def build_datasets(cfg, test_transform):
         from datasets import TinyImagenet
         train_raw = TinyImagenet(root=root, train=True,  download=download)
         test_ds   = TinyImagenet(root=root, train=False, download=download, transform=test_transform)
+    elif name == 'eurosat':
+        from datasets import EuroSAT
+        train_raw = EuroSAT(root=root, train=True)
+        test_ds   = EuroSAT(root=root, train=False, transform=test_transform)
     else:
         raise ValueError(f"Unknown dataset: {name}")
     return train_raw, test_ds
@@ -497,7 +501,7 @@ def main(lmbd, t_contrast, t_student, t_teacher, epochs_train, epochs_eval, metr
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--lmbd',         type=float, default=0.6,   help='Weight for IRD loss (default: 1.0)')
-    parser.add_argument('--trials',       type=int,   default=1,     help='Number of independent runs to average results over')
+    parser.add_argument('--trials',       type=int,   default=5,     help='Number of independent runs to average results over')
     parser.add_argument('--t_contrast',   type=float, default=0.07,  help='Temperature for contrastive loss')
     parser.add_argument('--t_student',    type=float, default=0.07,  help='Temperature for student in IRD loss')
     parser.add_argument('--t_teacher',    type=float, default=0.07,  help='Temperature for teacher in IRD loss')
@@ -505,10 +509,10 @@ if __name__ == "__main__":
     parser.add_argument('--epochs_eval',  type=int,   default=100,   help='Epochs for linear probe classifier')
     parser.add_argument('--metrics',      action='store_true', default=False, help='Compute CL metrics (linear probe, FWT, BWT, FM) — disabled by default for speed')
     parser.add_argument('--alpha_lump',   type=float, default=0.1,  help='Beta distribution alpha for LUMP mixup')
-    parser.add_argument('--dataset',      type=str,   default='cifar10', choices=['cifar10', 'tinyimagenet'], help='Dataset to use (defined in data.yml)')
+    parser.add_argument('--dataset',      type=str,   default='eurosat', choices=['cifar10', 'tinyimagenet', 'eurosat'], help='Dataset to use (defined in data.yml)')
     parser.add_argument('--buffer_size',  type=int,   default=500,   help='Replay buffer size (default: 500)')
-    parser.add_argument('--log_file',     type=str,   default='./log_tuning/cifar10.log',  help='Log file path (default: <datetime>.log)')
-    parser.add_argument('--gpu',          type=int,   default=0,     help='GPU id to use (default: 0)')
+    parser.add_argument('--log_file',     type=str,   default='./log_tuning/eurosat.log',  help='Log file path (default: <datetime>.log)')
+    parser.add_argument('--gpu',          type=int,   default=1,     help='GPU id to use (default: 0)')
     args = parser.parse_args()
 
     log_dir  = './log_tuning'
